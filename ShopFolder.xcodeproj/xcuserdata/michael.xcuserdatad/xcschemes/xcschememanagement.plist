@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Buy&amp;Store Lite(Dist).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Buy&amp;Store Lite.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Buy&amp;Store(Dist).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Buy&amp;Store(Release).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Buy&amp;Store.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>DBUnitTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4C00181F143AA7E00092EFB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C0018AC143AF8F90092EFB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C0018C5143AF97F0092EFB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C01CA041417BDDD00348B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C01CA281417BDDE00348B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C5C0D5C160A25100009A084</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C812718143AFA5800CFC600</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CB5A9701488EC5C0095DDCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CEBF85C143B4C16003A4013</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

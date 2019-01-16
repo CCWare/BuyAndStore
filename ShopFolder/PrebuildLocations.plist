@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TW</key>
+	<dict>
+		<key>1.0</key>
+		<array>
+			<string>7-ELEVEN</string>
+			<string>全家便利商店 Family Mart</string>
+			<string>萊爾富 HiLife</string>
+			<string>OK便利商店</string>
+			<string>大潤發 RT-Mart </string>
+			<string>家樂福 Carrefour</string>
+			<string>愛買 a.mart </string>
+			<string>全聯 Pxmart</string>
+			<string>Costco 好市多</string>
+			<string>屈臣氏 Watsons</string>
+			<string>康是美 Cosmed</string>
+			<string>杏一醫療用品 medFirst</string>
+			<string>頂好 Welcome</string>
+			<string>寶雅 Boya</string>
+			<string>美華泰 MIRADA</string>
+			<string>名佳美 MCM</string>
+			<string>特力屋 I-House</string>
+			<string>HOLA</string>
+			<string>IKEA</string>
+			<string>SOGO 廣三百貨</string>
+			<string>新光三越 SKM</string>
+			<string>大遠百(遠東百貨) FE21&apos;</string>
+			<string>大葉高島屋 Dayeh Takashimaya</string>
+			<string>微風廣場 Breeze</string>
+			<string>京華城 Living Mall</string>
+			<string>統一阪急 Uni Hankyu</string>
+			<string>Uniqlo</string>
+			<string>NET</string>
+			<string>Hang Ten</string>
+			<string>Giordano 佐丹奴</string>
+			<string>耐斯松屋 Nice Plaza</string>
+			<string>義大世界 E-DA WORLD</string>
+			<string>中友百貨 ChungYo</string>
+			<string>Yahoo!奇摩購物中心</string>
+			<string>PCHome線上購物</string>
+			<string>博客來 Books.com.tw</string>
+			<string>金石堂 Kingstone</string>
+			<string>誠品書店 Eslite</string>
+			<string>Payeasy線上購物</string>
+			<string>GoHappy購物網</string>
+			<string>樂天市場購物網 Rakuten</string>
+			<string>東森購物網ETMall</string>
+			<string>Nova</string>
+			<string>燦坤3C TKEC</string>
+			<string>順發3C Sunfar</string>
+			<string>日本BEST電器</string>
+			<string>10元商店</string>
+			<string>五金行</string>
+			<string>雜貨店</string>
+			<string>菜市場</string>
+		</array>
+		<key>2.0</key>
+		<array>
+			<string>巨城 BigCity</string>
+		</array>
+		<key>3.0</key>
+		<array>
+			<string>大創DAISO</string>
+		</array>
+	</dict>
+	<key>US</key>
+	<dict>
+		<key>1.0</key>
+		<array>
+			<string>Wal-mart</string>
+			<string>Costco</string>
+			<string>Target</string>
+			<string>Amazon</string>
+			<string>eBay</string>
+			<string>Macy&apos;s</string>
+			<string>J.C. Penney</string>
+			<string>Sears</string>
+			<string>Nordstrom</string>
+			<string>Bloomingdales</string>
+			<string>Sam&apos;s Club</string>
+			<string>Bi-mart</string>
+			<string>K-mart</string>
+			<string>Best Buy</string>
+		</array>
+	</dict>
+	<key>HK</key>
+	<dict>
+		<key>1.0</key>
+		<array>
+			<string>7-ELEVEN</string>
+			<string>OK便利店</string>
+			<string>百佳 Park&apos;n shop</string>
+			<string>惠康 Welcome</string>
+			<string>華潤萬家 CRV</string>
+			<string>屈臣氏 Watsons</string>
+			<string>萬寧 Mannings</string>
+			<string>吉之島 Jusco</string>
+			<string>日本城 JHC</string>
+			<string>實惠 Pricerite</string>
+			<string>龍成大藥房</string>
+			<string>卓悅藥妝店</string>
+			<string>Sasa</string>
+		</array>
+	</dict>
+	<key>CN</key>
+	<dict>
+		<key>1.0</key>
+		<array>
+			<string>全家便利商店 Family Mart</string>
+			<string>可的 KEDI</string>
+			<string>好德 alldays</string>
+			<string>联华快客</string>
+			<string>喜士多 C-Store</string>
+			<string>美宜佳</string>
+			<string>天福</string>
+			<string>7-ELEVEN</string>
+			<string>屈臣氏 Watsons</string>
+			<string>金玛超市</string>
+			<string>苏果超市</string>
+			<string>大润发 RT-Mart</string>
+			<string>淘宝网 taobao</string>
+		</array>
+	</dict>
+</dict>
+</plist>

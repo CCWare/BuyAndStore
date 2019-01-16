@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DBFolder" representedClassName="DBFolder" syncable="YES">
+        <attribute name="displayImage" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="imageRawData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" indexed="YES" syncable="YES"/>
+        <attribute name="number" attributeType="Integer 32" minValueString="0" maxValueString="5" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="page" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useItemImageAsCover" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFolderItem" inverseName="folder" inverseEntity="DBFolderItem" syncable="YES"/>
+    </entity>
+    <entity name="DBFolderItem" representedClassName="DBFolderItem" syncable="YES">
+        <attribute name="changeLog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createTime" attributeType="Date" syncable="YES"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isArchived" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="isUserCreated" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="lastUpdateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="basicInfo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBItemBasicInfo" inverseName="folderItems" inverseEntity="DBItemBasicInfo" syncable="YES"/>
+        <relationship name="expiryDate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBNotifyDate" inverseName="expireItems" inverseEntity="DBNotifyDate" syncable="YES"/>
+        <relationship name="folder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBFolder" inverseName="items" inverseEntity="DBFolder" syncable="YES"/>
+        <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBLocation" inverseName="folderItems" inverseEntity="DBLocation" syncable="YES"/>
+        <relationship name="nearExpiryDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBNotifyDate" inverseName="nearExpireItems" inverseEntity="DBNotifyDate" syncable="YES"/>
+    </entity>
+    <entity name="DBItemBasicInfo" representedClassName="DBItemBasicInfo" syncable="YES">
+        <attribute name="barcodeData" optional="YES" attributeType="String" minValueString="1" indexed="YES" syncable="YES"/>
+        <attribute name="barcodeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayImage" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="imageRawData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastUpdateTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" minValueString="1" indexed="YES" syncable="YES"/>
+        <attribute name="safeStockCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="folderItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFolderItem" inverseName="basicInfo" inverseEntity="DBFolderItem" syncable="YES"/>
+        <relationship name="shoppingItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBShoppingItem" inverseName="basicInfo" inverseEntity="DBShoppingItem" syncable="YES"/>
+    </entity>
+    <entity name="DBLocation" representedClassName="DBLocation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="altitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hasGeoInfo" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="horizontalAccuracy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="listPosition" attributeType="Integer 32" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
+        <attribute name="verticalAccuracy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="folderItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFolderItem" inverseName="location" inverseEntity="DBFolderItem" syncable="YES"/>
+        <relationship name="shoppingItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBShoppingItem" inverseName="location" inverseEntity="DBShoppingItem" syncable="YES"/>
+    </entity>
+    <entity name="DBNotifyDate" representedClassName="DBNotifyDate" syncable="YES">
+        <attribute name="date" attributeType="Date" indexed="YES" syncable="YES"/>
+        <relationship name="expireItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFolderItem" inverseName="expiryDate" inverseEntity="DBFolderItem" syncable="YES"/>
+        <relationship name="nearExpireItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBFolderItem" inverseName="nearExpiryDates" inverseEntity="DBFolderItem" syncable="YES"/>
+    </entity>
+    <entity name="DBShoppingItem" representedClassName="DBShoppingItem" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 32" minValueString="1" defaultValueString="1" syncable="YES"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasBought" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="listPosition" attributeType="Integer 32" minValueString="0" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="basicInfo" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBItemBasicInfo" inverseName="shoppingItem" inverseEntity="DBItemBasicInfo" syncable="YES"/>
+        <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DBLocation" inverseName="shoppingItems" inverseEntity="DBLocation" syncable="YES"/>
+        <fetchedProperty name="candidateItems" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="DBFolderItem" predicateString="basicInfo == $FETCH_SOURCE.basicInfo"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="DBFolder" positionX="331" positionY="-60" width="128" height="165"/>
+        <element name="DBFolderItem" positionX="124" positionY="-229" width="128" height="255"/>
+        <element name="DBItemBasicInfo" positionX="-74" positionY="-153" width="128" height="195"/>
+        <element name="DBLocation" positionX="376" positionY="-277" width="128" height="210"/>
+        <element name="DBNotifyDate" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="DBShoppingItem" positionX="124" positionY="9" width="128" height="179"/>
+    </elements>
+</model>

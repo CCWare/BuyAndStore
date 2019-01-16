@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FirstExecute</key>
+	<true/>
+	<key>CurrentPage</key>
+	<string>0</string>
+	<key>SettingVibrateBarcodeDetection</key>
+	<true/>
+	<key>SettingSoundBarcodeDetection</key>
+	<true/>
+	<key>SettingNotifyExpired</key>
+	<true/>
+	<key>SettingNotifyNearExpired</key>
+	<true/>
+	<key>SettingDailyNotifyHour</key>
+	<integer>9</integer>
+	<key>SettingDailyNotifyMinute</key>
+	<integer>0</integer>
+	<key>SettingNearExpiredDays</key>
+	<integer>3</integer>
+	<key>SettingShowHint</key>
+	<true/>
+	<key>SettingShowTutorial</key>
+	<true/>
+	<key>NotificationScheduled</key>
+	<string>NO</string>
+	<key>NotificationVersion</key>
+	<string>0.0</string>
+	<key>SettingUseBarcodeScanner</key>
+	<true/>
+	<key>NoticeBarcodeScanner</key>
+	<true/>
+	<key>ImportedLocations</key>
+	<dict/>
+	<key>SettingAllowAnalysis</key>
+	<true/>
+</dict>
+</plist>
